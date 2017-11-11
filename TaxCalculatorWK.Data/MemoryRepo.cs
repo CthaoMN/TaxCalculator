@@ -117,10 +117,12 @@ namespace TaxCalculatorWK.Data
 
         public static void GetBaskets()
         {
-            List<IProducts> listOfGoodsOne = new List<IProducts>();
-            listOfGoodsOne.Add(oneOne);
-            listOfGoodsOne.Add(oneTwo);
-            listOfGoodsOne.Add(oneThree);
+            List<IProducts> listOfGoodsOne = new List<IProducts>
+            {
+                oneOne,
+                oneTwo,
+                oneThree
+            };
 
             IBasket basketOne = new ShoppingBasket()
             {
@@ -128,9 +130,11 @@ namespace TaxCalculatorWK.Data
                 Name = "Output 1"
             };
 
-            List<IProducts> listOfGoodsTwo = new List<IProducts>();
-            listOfGoodsTwo.Add(twoOne);
-            listOfGoodsTwo.Add(twoTwo);
+            List<IProducts> listOfGoodsTwo = new List<IProducts>
+            {
+                twoOne,
+                twoTwo
+            };
 
             IBasket basketTwo = new ShoppingBasket()
             {
@@ -138,11 +142,13 @@ namespace TaxCalculatorWK.Data
                 Name = "Output 2"
             };
 
-            List<IProducts> listOfGoodsThree = new List<IProducts>();
-            listOfGoodsThree.Add(threeOne);
-            listOfGoodsThree.Add(threeTwo);
-            listOfGoodsThree.Add(threeThree);
-            listOfGoodsThree.Add(threeFour);
+            List<IProducts> listOfGoodsThree = new List<IProducts>
+            {
+                threeOne,
+                threeTwo,
+                threeThree,
+                threeFour
+            };
             IBasket basketThree = new ShoppingBasket()
             {
                 ShoppingItems = listOfGoodsThree,
